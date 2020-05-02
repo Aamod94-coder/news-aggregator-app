@@ -66,6 +66,27 @@ h1
     
   }
 
+  
+  .not-found {
+    color: red;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-left: 25px;
+    list-style-type: none;
+    margin-top: 20px;
+    display: block;
+    align-content: center;
+ }
+  
+  .load {
+    color: white;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-left: 25px;
+    margin-top: 20px;
+    align-items: center; 
+  }
+  
   .article {
     list-style-type: none;
     display: inline;
@@ -133,23 +154,3 @@ h1
     text-decoration: none;
   }
   
-
-  .not-found {
-    color: red;
-    font-family: sans-serif;
-    font-size: 35px;
-    margin-left: 25px;
-    list-style-type: none;
-    margin-top: 20px;
-    display: block;
-    align-content: center;
- }
-  
-  .load {
-    color: white;
-    font-family: sans-serif;
-    font-size: 35px;
-    margin-left: 25px;
-    margin-top: 20px;
-    align-items: center; 
-  }
