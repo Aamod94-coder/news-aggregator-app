@@ -1,2 +1,155 @@
 @import "./reset.css";
 
+body
+{
+    background-color: black;
+    margin: 0px;
+}
+h1
+{
+   color: white;
+   text-align: center;
+   border: solid 1px white;
+   padding: 20px;
+   font-size: x-large;
+   font-family:'Courier New', Courier, monospace;
+   display: inline-block;
+   margin-left: 650px;
+   margin-top: 20px;
+   
+}
+
+.search-container
+{
+    margin-top: 20px;
+    border-bottom: solid 1px white;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+
+#search
+
+{
+    color: white;
+    margin-bottom: 5px;
+    width: 300px;
+    background-color: black;
+    border:none;
+    
+
+   
+}
+
+#news-articles {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+.container {
+    max-width: 265px;
+    border: rgb(156, 141, 141) 10px solid;
+    height: 530px;
+    padding: 35px;
+    margin-left: 9px;
+    background-color: var(--box-color);
+    margin-bottom: 20px;
+    border-radius: 18px;
+    padding-right: 30px;
+    margin-top: 20px;
+    
+  }
+
+  .article {
+    list-style-type: none;
+    display: inline;
+  }
+  
+  .container:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-box-shadow: 0 0 5px var(--box-shadow);
+            box-shadow: 0 0 5px var(--box-shadow);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: tomato;
+  }
+  
+  .img_area {
+    width: 265px;
+    height: 250px;
+    background-color: var(--img-background);
+  }
+  
+  .article-img {
+    margin-top: 20px;
+    width: 265px;
+    height: 205px;
+  }
+  
+  .article-title {
+    background: none;
+    font-family: sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .article-description {
+    font-size: 25px;
+    color: white;
+    background: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-family: sans-serif;
+    margin-top: 20px;
+  }
+  
+  .article-author {
+    background: none;
+    font-size: 25px;
+    font-family: Trebuchet MS;
+    color: white;
+    display: block;
+    text-align: right;
+
+  }
+  
+  .article-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+  .not-found {
+    color: red;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-left: 25px;
+    list-style-type: none;
+    margin-top: 20px;
+    display: block;
+    align-content: center;
+ }
+  
+  .load {
+    color: white;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-left: 25px;
+    margin-top: 20px;
+    align-items: center; 
+  }
