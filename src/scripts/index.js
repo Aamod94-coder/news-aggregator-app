@@ -1,6 +1,22 @@
-const apikey="02ae867dcdf14639a290bc6f442307c9";
-var article_area=document.getElementById("news-articles");
+document.querySelector("#toggle_action").addEventListener('change',toggle_func)
 
+function toggle_func(e){
+  if (e.target.checked)
+   {
+    document.documentElement.setAttribute('data-theme', 'lite');
+    document.querySelector(".toggletxt").innerHTML="Toggle to Dark Mode";
+    }
+else
+   {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.querySelector(".toggletxt").innerHTML="Toggle to Lite Mode";
+   }   
+}
+
+//Api-Key//
+const apikey="339b58f0aa7c460fa259944a0681031f";
+var article_area=document.getElementById("news-articles");
+//Function to have formatted NEWS//
 function getNews(news){
   let output="";
   if(news.totalResults>0){
@@ -26,7 +42,7 @@ function getNews(news){
     article_area.innerHTML='<li class="not-found">No article was found based on the search.</li>';
   }
 };
-
+// Function to retreive news using Fetch API with Await//
 async function retreive(searchValueText=""){
 
     article_area.innerHTML='<p class="load">News are Loading...</p>';
@@ -42,19 +58,19 @@ async function retreive(searchValueText=""){
     const result=await response.json();
     getNews(result);
 }
-
+//Get text value from Searchbar and pass to retreive function//
 async function searchvalue(e){  
-    if (event.key === "Enter")
+    if (event.which === 13 || event.keyCode === 13 || event.key === "Enter")
      {
       retreive(e.target.value);
      }
 };
-
+//Attached Event listener for Searchbar to retreive text from Searchbar//
 function start(){
   document.getElementById("search").addEventListener('keypress',searchvalue);
   retreive();
 }
-
+//Initializing Function//
 (function(){
   start();}
 )();
